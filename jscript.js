@@ -11,6 +11,12 @@ y=y*5;
 var num=5;
 var str="string";
 var num_string="12345678";
+var obj={fname:"Rohit",lname:"Sharma"};
+var arr=["Rohit","Sharma","45","264"];
+function myFunc()
+{
+
+}
 
 //declarations
 //1----->
@@ -43,9 +49,25 @@ var concat="1"+1+1;
 
 const pi=3.14;
 
+//Arithmetic operations
 
+var add=5+5;
+var diff=5-5;
+var prod=5*5;
+var div=5/5;
+var mod=5%5;
+var pow=5**2;
+var v=50;
+v--;
+v++;
+v+=1;
+v-=1;
 
+//type of datatype
 
-
-
-
+console.log(typeof(add));
+console.log(typeof(collegeName));
+console.log(typeof(obj));
+console.log(typeof(arr));
+//consle.log(typeof(a));
+console.log(typeof(myFunc));
