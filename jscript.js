@@ -41,8 +41,8 @@ var concat="1"+1+1;
     let js_let=5;
 }
 
-const pi;
-pi=3.14;
+const pi=3.14;
+
 
 
 
