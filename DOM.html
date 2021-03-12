@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="welcome"></p>
+    <p id="hello">Document Object Model</p>
+    <!-- changing css property through event -->
+    <button type="button" onclick="document.getElementById('hello').style.color = 'red' ">Click the button</button>
+    <script>
+        document.getElementById("welcome").innerHTML = "Document Object Model";
+        document.getElementById("welcome").style.color= "blue";//css property
+    </script>
+</body>
+</html>
+
+<!-- getElementById is a method
+innerHTML is a property -->
