@@ -1,0 +1,42 @@
+<!-- syntax
+element.addEventListener(event, function, useCapture);
+The first parameter is the type of the event (like "click" or "mousedown" or any other HTML DOM Event.)
+The second parameter is the function we want to call when the event occurs.
+The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click the button</button>
+    <h5 id="word2">Click here.....</h5>
+    <button id="remove" onclick="removeListener()">Click her to remove</button>
+    <script>
+        var a=5;
+        var b=6;
+        document.getElementById("btn").addEventListener("click",fun(a,b));
+        document.getElementById("word2").addEventListener("mouseout",myfun);
+        document.getElementById("word2").addEventListener("mouseover",myfun1);
+        function fun(a,b)
+        {
+            window.alert("Add Event Listener Method");
+            console.log(a*b);
+        }
+        function myfun()
+        {
+            document.getElementById('word2').innerHTML="Onmouseout Event"
+        }
+        function myfun1()
+        {
+            document.getElementById('word2').innerHTML="Onmouseover Event"
+        }
+        function removeListener()
+        {
+            document.getElementById("word2").removeEventListener("mouseover",myfun1);
+        }
+    </script>
+</body>
+</html>
