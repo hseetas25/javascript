@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="innerHTML='Inner Javascript Event'">Click here.....</h1>
+    <h1 onclick="changeData(this)">Click here.....</h1>
+    <h5 id="date">Today's date</h5>
+    <button onclick="date()">Today's Date and Time</button>
+    <br>
+    <br>
+    <span>Enter a word:</span>
+    <input type="text" id="word" onchange="upperCase()">
+    <br>
+    <br>
+    <span>Enter a word:</span>
+    <input type="text" id="word1" onmouseover="lowerCase()">
+    <br>
+    <br>
+    <h5 id="word2" onmouseout="myfun()" onmouseover="myfun1()">Click here.....</h5>
+    <script>
+        function changeData(id)
+        {
+            id.innerHTML="InnerJavascript Event"
+        }
+        function date()
+        {
+            document.getElementById('date').innerHTML=Date();
+        }
+        function upperCase()
+        {
+            var x=document.getElementById('word');
+            x.value=x.value.toUpperCase();
+        }
+        function lowerCase()
+        {
+            var x=document.getElementById('word1');
+            x.value=x.value.toLowerCase();
+        }
+        function myfun()
+        {
+            document.getElementById('word2').innerHTML="Onmouseout Event"
+        }
+        function myfun1()
+        {
+            document.getElementById('word2').innerHTML="Onmouseover Event"
+        }
+    </script>
+</body>
+</html>
