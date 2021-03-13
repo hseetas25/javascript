@@ -1,1 +1,33 @@
-abc
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="p1">This is first paragraph.</p>
+        <p id="p2">This is second paragraph.</p>
+    </div>
+    <script>
+        //creating new elements
+        var newpara=document.createElement("p");
+        var newnode=document.createTextNode("This is new third paragraph");
+        newpara.appendChild(newnode);
+        var newpara1=document.createElement("p");
+        var newnode1=document.createTextNode("This is new fourth paragraph");
+        newpara1.appendChild(newnode1);
+        //inserting elements
+        var element=document.getElementById("parent");
+        var element2=document.getElementById("p2");
+        element.insertBefore(newpara,element2);
+        //element.appendChild(newpara);
+        var element3=document.getElementById("p1");
+        //remove elements
+        element.removeChild(element3)
+        //replace elements
+        element.replaceChild(newpara1,element2)
+    </script>
+</body>
+</html>
