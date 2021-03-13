@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="p1">This is first paragraph.</p>
+        <p id="p2">This is second paragraph.</p>
+        <p id="p3">This is third paragraph.</p>
+        <p id="p4">This is fourth paragraph.</p>
+        <button onclick="fun()">Click here.....</button>
+    </div>
+    <script>
+        function fun()
+        {
+            var x=document.getElementsByTagName('p');
+            var i=0;
+            for(i=0;i<x.length;i++)
+            {
+                x[i].style.color="blue";
+            }
+        }
+    </script>
+</body>
+</html>
